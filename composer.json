@@ -1,0 +1,14 @@
+{
+    "name": "c5dev/boilerplate-package",
+    "description": "A base to start building concrete5 packages from.",
+    "type": "concrete5-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Green",
+            "email": "oliver@c5dev.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
