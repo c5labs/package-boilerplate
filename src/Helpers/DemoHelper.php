@@ -15,8 +15,6 @@ defined('C5_EXECUTE') or die('Access Denied.');
 /**
  * Class ServiceProvider
  * This class provides registration for anything and everything that happens on load past autoload.
- *
- * @package Concrete\Package\LegacySample\Libraries
  */
 class DemoHelper
 {

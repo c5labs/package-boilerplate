@@ -40,7 +40,7 @@ class Controller extends Package
      * This feature is often used in theme packages to install 'sample' content on the site.
      *
      * @see https://goo.gl/C4m6BG
-     * @var boolean
+     * @var bool
      */
     protected $pkgAllowsFullContentSwap = false;
 
@@ -49,7 +49,7 @@ class Controller extends Package
      * imported via the full content swap above?
      *
      * @see https://goo.gl/C4m6BG
-     * @var boolean
+     * @var bool
      */
     protected $pkgContentProvidesFileThumbnails = false;
 
@@ -60,7 +60,7 @@ class Controller extends Package
      * '\Concrete\Package\MyPackage\Src\MyNamespace' becomes '\Concrete\Package\MyPackage\MyNamespace'
      *
      * @see https://goo.gl/4wyRtH
-     * @var boolean
+     * @var bool
      */
     protected $pkgAutoloaderMapCoreExtensions = false;
 
@@ -72,9 +72,9 @@ class Controller extends Package
      * @see https://goo.gl/4wyRtH
      * @var array
      */
-    protected $pkgAutoloaderRegistries = array(
+    protected $pkgAutoloaderRegistries = [
         //'src/MyVendor/Statistics' => '\MyVendor\ConcreteStatistics'
-    );
+    ];
 
     /**
      * The packages handle.
@@ -90,7 +90,7 @@ class Controller extends Package
      * 
      * @var string
      */
-    protected $pkgVersion = '0.9.0';    
+    protected $pkgVersion = '0.9.0';
 
     /**
      * The packages name.
@@ -111,10 +111,10 @@ class Controller extends Package
      * 
      * @var array
      */
-    protected $providers = array(
+    protected $providers = [
         // Register your concrete5 service providers here
         'Concrete\Package\BoilerplatePackage\Src\Providers\HelperServiceProvider',
-    );
+    ];
 
     /**
      * Boot the packages composer autoloader if it's present.
@@ -170,7 +170,7 @@ class Controller extends Package
     public function install()
     {
         // Add your custom logic here that needs to be executed BEFORE package install.
-        
+
         $pkg = parent::install();
 
         // Add your custom logic here that needs to be executed AFTER package install.
@@ -186,7 +186,7 @@ class Controller extends Package
     public function upgrade()
     {
         // Add your custom logic here that needs to be executed BEFORE package install.
-        
+
         parent::upgrade();
 
         // Add your custom logic here that needs to be executed AFTER package upgrade.
