@@ -1,14 +1,11 @@
 <?php
 /**
- * Boilerplate Package Controller File.
- *
- * PHP version 5.3
+ * Package Boilerplate Controller File.
  *
  * @author   Oliver Green <oliver@c5dev.com>
  * @license  See attached license file
- * @link     https://c5dev.com
  */
-namespace Concrete\Package\BoilerplatePackage;
+namespace Concrete\Package\PackageBoilerplate;
 
 use Core;
 use Concrete\Core\Foundation\Service\ProviderList;
@@ -18,13 +15,12 @@ use Illuminate\Filesystem\Filesystem;
 defined('C5_EXECUTE') or die('Access Denied.');
 
 /**
- * Boilerplate Package Controller Class.
+ * Package Controller Class.
  *
- * A boilerplate package to start building standards complient concrete5 pacakges from.
+ * Start building standards complient concrete5 pacakges from me.
  *
  * @author   Oliver Green <oliver@c5dev.com>
  * @license  See attached license file
- * @link     https://c5dev.com
  */
 class Controller extends Package
 {
@@ -83,7 +79,7 @@ class Controller extends Package
      * 
      * @var string
      */
-    protected $pkgHandle = 'boilerplate-package';
+    protected $pkgHandle = 'package-boilerplate';
 
     /**
      * The packages version.
@@ -97,7 +93,7 @@ class Controller extends Package
      * 
      * @var string
      */
-    protected $pkgName = 'Boilerplate Package';
+    protected $pkgName = 'Package Boilerplate';
 
     /**
      * The packages description.
@@ -113,7 +109,7 @@ class Controller extends Package
      */
     protected $providers = [
         // Register your concrete5 service providers here
-        'Concrete\Package\BoilerplatePackage\Src\Providers\HelperServiceProvider',
+        'Concrete\Package\PackageBoilerplate\Src\Providers\DemoHelperServiceProvider',
     ];
 
     /**

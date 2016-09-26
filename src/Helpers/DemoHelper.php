@@ -1,20 +1,16 @@
 <?php
 /**
- * Boilerplate Package Controller File.
- *
- * PHP version 5.3
+ * Demonstration Helper File.
  *
  * @author   Oliver Green <oliver@c5dev.com>
  * @license  See attached license file
- * @link     https://c5dev.com
  */
-namespace Concrete\Package\BoilerplatePackage\Src\Helpers;
+namespace Concrete\Package\PackageBoilerplate\Src\Helpers;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
 /**
- * Class ServiceProvider
- * This class provides registration for anything and everything that happens on load past autoload.
+ * Demonstration Helper Class.
  */
 class DemoHelper
 {
