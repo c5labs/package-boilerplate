@@ -100,7 +100,7 @@ class Controller extends Package
      * 
      * @var string
      */
-    protected $pkgDescription = 'A package to start building from.';
+    protected $pkgDescription = 'Start building standards complient concrete5 packages from me.';
 
     /**
      * Package service providers to register.
