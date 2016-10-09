@@ -29,6 +29,5 @@ class DemoHelperServiceProvider extends Provider
     {
         // Code included here will be executed after all service providers have been 
         // registered and the CMS is booting.
-        dd('boot');
     }
 }
