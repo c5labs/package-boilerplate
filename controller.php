@@ -17,7 +17,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
 /**
  * Package Controller Class.
  *
- * Start building standards complient concrete5 pacakges from me.
+ * Start building standards complient concrete5 packages from me.
  *
  * @author   Oliver Green <oliver@c5dev.com>
  * @license  See attached license file
