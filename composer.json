@@ -1,6 +1,6 @@
 {
     "name": "c5dev/package-boilerplate",
-    "description": "A collection of boilerplate code which can be used as a base to begin building concrete5 packages.",
+    "description": "Start building standards complient concrete5 packages from me.",
     "type": "concrete5-package",
     "license": "MIT",
     "authors": [
