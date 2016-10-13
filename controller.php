@@ -138,6 +138,10 @@ class Controller extends Package
 
         foreach ($this->providers as $provider) {
             $list->registerProvider($provider);
+
+            if (method_exists($provider, 'boot')) {
+                Core::make($provider)->boot($this);
+            }
         }
     }
 
