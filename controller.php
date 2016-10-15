@@ -29,7 +29,7 @@ class Controller extends Package
      * 
      * @var string
      */
-    protected $appVersionRequired = '5.7.0';
+    protected $appVersionRequired = '5.7.5';
 
     /**
      * Does the package provide a full content swap?
