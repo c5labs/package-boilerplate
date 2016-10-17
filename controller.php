@@ -2,7 +2,7 @@
 /**
  * Package Boilerplate Controller File.
  *
- * @author   Oliver Green <oliver@c5dev.com>
+ * @author   Oliver Green <oliver@c5labs.com>
  * @license  See attached license file
  */
 namespace Concrete\Package\PackageBoilerplate;
@@ -19,7 +19,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
  *
  * Start building standards complient concrete5 packages from me.
  *
- * @author   Oliver Green <oliver@c5dev.com>
+ * @author   Oliver Green <oliver@c5labs.com>
  * @license  See attached license file
  */
 class Controller extends Package

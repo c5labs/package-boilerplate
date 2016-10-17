@@ -2,7 +2,7 @@
 /**
  * Demonstration Helper File.
  *
- * @author   Oliver Green <oliver@c5dev.com>
+ * @author   Oliver Green <oliver@c5labs.com>
  * @license  See attached license file
  */
 namespace Concrete\Package\PackageBoilerplate\Src\Helpers;

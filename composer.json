@@ -1,12 +1,12 @@
 {
-    "name": "c5dev/package-boilerplate",
+    "name": "c5labs/package-boilerplate",
     "description": "Start building standards complient concrete5 packages from me.",
     "type": "concrete5-package",
     "license": "MIT",
     "authors": [
         {
             "name": "Oliver Green",
-            "email": "oliver@c5dev.com"
+            "email": "oliver@c5labs.com"
         }
     ],
     "minimum-stability": "dev",
