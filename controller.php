@@ -102,6 +102,8 @@ class Controller extends Package
      */
     protected $pkgDescription = 'Start building standards complient concrete5 packages from me.';
 
+    /* @section service-providers */
+
     /**
      * Package service providers to register.
      * 
@@ -111,6 +113,9 @@ class Controller extends Package
         // Register your concrete5 service providers here
         'Concrete\Package\PackageBoilerplate\Src\Providers\DemoHelperServiceProvider',
     ];
+
+    /* @endsection service-providers */
+    /* @section composer */
 
     /**
      * Boot the packages composer autoloader if it's present.
@@ -126,6 +131,9 @@ class Controller extends Package
             $filesystem->getRequire($path);
         }
     }
+
+    /* @endsection composer */
+    /* @section service-providers */
 
     /**
      * Register the packages defined service providers.
@@ -145,6 +153,8 @@ class Controller extends Package
         }
     }
 
+    /* @endsection service-providers */
+
     /**
      * The packages on start hook that is fired as the CMS is booting up.
      * 
@@ -152,11 +162,15 @@ class Controller extends Package
      */
     public function on_start()
     {
+        /* @section composer */
         // Boot composer
         $this->bootComposer();
+        /* @section composer */
 
+        /* @section service-providers */
         // Register defined service providers
         $this->registerServiceProviders();
+        /* @endsection service-providers */
 
         // Add custom logic here that needs to be executed during CMS boot, things
         // such as registering services, assets, etc.
