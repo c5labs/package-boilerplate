@@ -165,7 +165,7 @@ class Controller extends Package
         /* @section composer */
         // Boot composer
         $this->bootComposer();
-        /* @section composer */
+        /* @endsection composer */
 
         /* @section service-providers */
         // Register defined service providers
