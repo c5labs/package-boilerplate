@@ -114,27 +114,6 @@ class Controller extends Package
         'Concrete\Package\PackageBoilerplate\Src\Providers\DemoHelperServiceProvider',
     ];
 
-    /* @endsection service-providers */
-    /* @section composer */
-
-    /**
-     * Boot the packages composer autoloader if it's present.
-     * 
-     * @return void
-     */
-    protected function bootComposer()
-    {
-        $filesystem = new Filesystem();
-        $path = __DIR__.'/vendor/autoload.php';
-
-        if ($filesystem->exists($path)) {
-            $filesystem->getRequire($path);
-        }
-    }
-
-    /* @endsection composer */
-    /* @section service-providers */
-
     /**
      * Register the packages defined service providers.
      * 
@@ -154,6 +133,24 @@ class Controller extends Package
     }
 
     /* @endsection service-providers */
+    /* @section composer */
+
+    /**
+     * Boot the packages composer autoloader if it's present.
+     * 
+     * @return void
+     */
+    protected function bootComposer()
+    {
+        $filesystem = new Filesystem();
+        $path = __DIR__.'/vendor/autoload.php';
+
+        if ($filesystem->exists($path)) {
+            $filesystem->getRequire($path);
+        }
+    }
+
+    /* @endsection composer */
 
     /**
      * The packages on start hook that is fired as the CMS is booting up.
