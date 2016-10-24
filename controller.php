@@ -179,10 +179,20 @@ class Controller extends Package
      * @return \Concrete\Core\Package\Package
      */
     public function install()
-    {
+    {        
+        /* @section composer */
+        // Boot composer
+        $this->bootComposer();
+        /* @endsection composer */
+
         // Add your custom logic here that needs to be executed BEFORE package install.
 
         $pkg = parent::install();
+
+        /* @section service-providers */
+        // Register defined service providers
+        $this->registerServiceProviders();
+        /* @endsection service-providers */
 
         // Add your custom logic here that needs to be executed AFTER package install.
 
