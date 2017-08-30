@@ -9,8 +9,5 @@
             "email": "oliver@c5labs.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "composer/installers": "dev-concrete5-installation-path-updates"
-    }
+    "minimum-stability": "dev"
 }
