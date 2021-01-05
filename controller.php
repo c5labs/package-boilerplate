@@ -73,6 +73,13 @@ class Controller extends Package
     ];
 
     /**
+     * Package dependencies.
+     * @see https://bit.ly/38XqFqM
+     * @var array
+     */
+    protected $packageDependencies = [];
+
+    /**
      * The packages handle.
      * Note that this must be unique in the 
      * entire concrete5 package ecosystem.
