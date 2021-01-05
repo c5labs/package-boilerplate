@@ -29,7 +29,7 @@ class Controller extends Package
      * 
      * @var string
      */
-    protected $appVersionRequired = '5.7.5';
+    protected $appVersionRequired = '8.0.0';
 
     /**
      * Does the package provide a full content swap?
@@ -58,7 +58,7 @@ class Controller extends Package
      * @see https://goo.gl/4wyRtH
      * @var bool
      */
-    protected $pkgAutoloaderMapCoreExtensions = false;
+    protected $pkgAutoloaderMapCoreExtensions = true;
 
     /**
      * Package class autoloader registrations
